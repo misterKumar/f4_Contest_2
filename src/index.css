@@ -1,0 +1,132 @@
+/* body{
+    align-items: center;
+    justify-content: center;
+} */
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap');
+
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(35deg, transparent 49.5%, rgb(91,247,219) 49.5%, rgb(91,247,219) 50.5%, transparent 50.5%);
+    position: relative;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin: 100px auto;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 10px 10px #f0f0f0;
+}
+
+.card p{
+    font-size: 15px;
+    color: gray;
+}
+.card label{
+    font-size: 15px;
+}
+.card input{
+    height: 34px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.card button{
+    width: 250px;
+    height: 34px;
+    justify-content: center;
+    background-color: rgb(5, 69, 70);
+    color: white;
+    border-radius: 9px;
+    margin-top: 5px;
+    margin:5px auto;
+    cursor: pointer;
+
+}
+.card a{
+    text-decoration: none;
+    color: rgb(84, 76, 240);
+    font-size: 15px;
+    justify-content: center;
+    margin: 2px auto;
+}
+
+.footter{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.footter span a {
+    text-decoration: none;
+}
+
+/* //profile page */
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 25px auto ;
+    
+}
+.profile-container .left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    width: 60%;
+    background-color: white;
+    opacity: 0.8;
+}
+.profile-container .right{
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    width: 30%;
+}
+.profile-container .right img{
+    width: 100px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+/* // mobile device */
+@media (max-width: 600px){
+    body{
+        background-image: none;
+    }
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: auto;
+        margin: 5px auto;
+        justify-content: center;
+    }
+    .profile-container .right img{
+        width: 50px;
+        height: 100px;
+        border-radius: 15px;
+        
+    }
+}
